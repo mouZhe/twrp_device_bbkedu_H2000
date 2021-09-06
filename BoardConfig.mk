@@ -36,12 +36,13 @@ TARGET_CPU_ABI2 := armeabi
 ENABLE_CPUSETS := true
 TARGET_CPU_SMP := true
 
-TARGET_USES_64_BIT_BINDER := true
-TARGET_USES_64_BIT_BCMDHD := false
+#TARGET_USES_64_BIT_BINDER := true
+#TARGET_USES_64_BIT_BCMDHD := false
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := rk30sdk
 TARGET_NO_BOOTLOADER := true
+BOARD_VENDOR := BBKEDU
 
 # Kernel
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00080000 --ramdisk_offset 0x01c00000 --tags_offset 0xffffffff
